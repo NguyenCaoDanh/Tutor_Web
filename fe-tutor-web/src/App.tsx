@@ -15,7 +15,10 @@ import LogOut from './pages/Logout';
 
 // User Pages
 import HomePage from './pages/HomePage';
-
+import FindTutorPage from './pages/FindTutorPage';
+import BlogPage from './pages/BlogPage';
+import AboutPage from './pages/AboutPage';
+import RecruitPage from './pages/RecruitPage';
 // Admin Pages
 import DashBoard01 from './pages/DashBoard01';
 
@@ -27,6 +30,10 @@ function App() {
         {/* Main Layout Routes */}
         <Route path="/" element={<MainLayout />}>
           <Route index element={<HomePage />} />
+          <Route path="find-tutor" element={<FindTutorPage />} />
+          <Route path="blog" element={<BlogPage/>} />
+          <Route path="contact" element={<AboutPage />} />
+          <Route path="tuyen-dung" element={<RecruitPage />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<RegisterPage />} />
           <Route path="logout" element={<LogOut />} />
